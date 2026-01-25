@@ -1,0 +1,93 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.3.8/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "includes": [
+      "**/*.spec.ts",
+      "**/*.test.ts",
+      "tests/**/*.ts",
+      "fixtures/**/*.ts",
+      "utils/**/*.ts",
+
+      "!!test-results/**",
+      "!!playwright-report/**",
+      "!!dist/**",
+      "!!build/**",
+      "!!node_modules/**",
+      "!!*.log",
+      "!!pnpm-lock.yaml",
+      "!!package-lock.json",
+      "!!yarn.lock"
+    ]
+  },
+  "formatter": {
+    "enabled": false
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "complexity": {
+        "noExcessiveCognitiveComplexity": "warn",
+        "noUselessLoneBlockStatements": "error"
+      },
+      "correctness": {
+        "noUnusedVariables": "error",
+        "noUnusedImports": "error",
+        "noInvalidUseBeforeDeclaration": "error"
+      },
+      "style": {
+        "noNegationElse": "warn",
+        "useConsistentArrayType": "error",
+        "useExportType": "error",
+        "useFilenamingConvention": "off",
+        "useImportType": "error",
+        "useShorthandFunctionType": "error",
+        "useForOf": "error"
+      },
+      "suspicious": {
+        "noExplicitAny": "warn",
+        "noArrayIndexKey": "warn",
+        "noEmptyBlockStatements": "error",
+        "noGlobalAssign": "error",
+        "noMisleadingCharacterClass": "error",
+        "noThenProperty": "error",
+        "useAwait": "error",
+        "noApproximativeNumericConstant": "warn",
+        "noMisrefactoredShorthandAssign": "warn"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "double",
+      "semicolons": "asNeeded",
+      "trailingCommas": "es5",
+      "arrowParentheses": "always"
+    }
+  },
+  "json": {
+    "formatter": {
+      "enabled": false
+    }
+  },
+  "css": {
+    "formatter": {
+      "indentStyle": "space",
+      "indentWidth": 2
+    }
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "off"
+      }
+    }
+  }
+}
