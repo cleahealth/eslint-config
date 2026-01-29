@@ -71,7 +71,7 @@
 		"formatter": {
 			"quoteStyle": "double",
 			"jsxQuoteStyle": "double",
-			"semicolons": "asNeeded",
+			"semicolons": "always",
 			"trailingCommas": "all",
 			"arrowParentheses": "always"
 		}
