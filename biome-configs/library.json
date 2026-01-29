@@ -63,7 +63,7 @@
       "quoteStyle": "double",
       "jsxQuoteStyle": "double",
       "semicolons": "always",
-      "trailingCommas": "es5",
+      "trailingCommas": "all",
       "arrowParentheses": "asNeeded"
     }
   },
