@@ -21,10 +21,10 @@
 			"!build/**",
 			"!node_modules/**",
 			"!coverage/**",
-			"!.next/**",
+			"!.react-router/**",
 			"!out/**",
 			"!!*.log",
-			"!!pnpm-lock.yaml",
+			"!!bun.lock",
 			"!!package-lock.json",
 			"!!yarn.lock"
 		]

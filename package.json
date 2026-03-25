@@ -8,7 +8,7 @@
   "type": "module",
   "exports": {
     "./library.json": "./biome-configs/library.json",
-    "./next.json": "./biome-configs/next.json",
+    "./app.json": "./biome-configs/app.json",
     "./playwright.json": "./biome-configs/playwright.json"
   }
 }
